@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/desMainFragment">
+
+    <fragment
+        android:id="@+id/desMainFragment"
+        android:name="es.iessaladillo.pedrojoya.pr08.ui.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragmentToDetailsFragment"
+            app:destination="@id/desDetailsFragment" />
+        <action
+            android:id="@+id/action_mainFragmentToPreferenceFragment"
+            app:destination="@id/desPreferenceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/desDetailsFragment"
+        android:name="es.iessaladillo.pedrojoya.pr08.ui.fragments.DetailsFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/desPreferenceFragment"
+        android:name="es.iessaladillo.pedrojoya.pr08.ui.fragments.PreferenceFragment"
+        android:label="PreferenceFragment" />
+</navigation>
